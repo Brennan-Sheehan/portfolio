@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  --dark-background: #272833;
+  --dark-foreground: #353543;
+  --dark-accent: #4A4962;
+  --standard-text: #8E8E9C;
+  --accent-text:  #FDFFFF;
+  --dark-highlight: #F4BE3A;
+
+}
+
+p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: left;
+}
+h1 {
+  color: var(--accent-text, #fdffff);
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+h2 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+h3 {
+  color: #FFF;
+font-family: Inter;
+font-size: 1rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-align: left;
+}
