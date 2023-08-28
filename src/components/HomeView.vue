@@ -72,7 +72,7 @@
             <p>
               Co-designed Linux Based POS System. Acquired skills on Linux
               server processes to design and build the Linux server back-end
-              hosting the Java front-end application.
+              hosting the Java front-end application
             </p>
           </li>
           <li>
@@ -318,7 +318,7 @@ li {
   }
 
   .education-container {
-    max-height: 300px;
+    max-height: 355px;
     max-width: 500px;
   }
 }
@@ -327,7 +327,7 @@ li {
     display: flex;
   }
   #Projects {
-    margin-top: 3rem;
+    margin-top: 7em;
   }
   .profile-view {
     position: absolute;
@@ -338,6 +338,12 @@ li {
     display: flex;
     gap: 15rem;
     margin: 3rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  #Projects {
+    margin-top: 6.5em;
   }
 }
 </style>

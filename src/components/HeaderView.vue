@@ -71,6 +71,7 @@ export default {
   align-items: flex-start;
   gap: 0.56rem;
   margin: 2rem;
+  margin-top: 3em;
 }
 .name {
   font-weight: 700;
@@ -96,7 +97,7 @@ export default {
     align-content: flex-start;
     gap: 1.5rem;
     margin-left: 9rem;
-    z-index: 100;
+    z-index: 90;
   }
 
   .socials p {

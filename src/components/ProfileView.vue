@@ -5,6 +5,7 @@
       <img src="../assets/headshot-nobg.png" alt="profile picture" />
     </div>
     <div class="contact-container">
+      <h2>Contact</h2>
       <div class="contact">
         <div class="email">
           <svg
@@ -39,6 +40,16 @@
             />
           </svg>
           <p>630-453-1686</p>
+        </div>
+      </div>
+    </div>
+    <div class="built-with-container">
+      <div class="built-with">
+        <div class="vue">
+          <img src="../assets/vue-build.svg" alt="Built with Vue 3" />
+        </div>
+        <div class="firebase">
+          <img src="../assets/logo-built_black.svg" alt="Built with Firebase" />
         </div>
       </div>
     </div>
@@ -77,13 +88,13 @@ export default {
 
 .contact-container {
   display: flex;
-  height: 4.4375rem;
+  flex-direction: column;
   flex-shrink: 0;
   border-radius: 0.3125rem;
   background: var(--dark-accent, #4a4962);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin: 0 2rem 2rem 2rem;
-  padding: 0.5rem 1rem 0 2rem;
+  padding: 0.5rem 1rem 0.5rem 2rem;
 }
 .contact {
   display: inline-flex;
@@ -98,7 +109,7 @@ export default {
 }
 .email a {
   text-decoration: none;
-  color: #fff;
+  color: var(---standard-text);
   font-family: Inter;
   font-size: 0.875rem;
   font-style: normal;
@@ -110,6 +121,30 @@ export default {
   display: flex;
   align-items: flex-start;
   gap: 0.8125rem;
+}
+
+.built-with-container {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-radius: 0.3125rem;
+  background: var(--dark-accent, #4a4962);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 0 2rem 2rem 2rem;
+  padding: 0rem 1rem 0 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.built-with {
+  display: flex;
+}
+
+.built-with img {
+  width: 8rem;
+  height: 8rem;
+  flex-shrink: 0;
+  padding: 0.5rem;
 }
 
 @media (min-width: 1300px) {
@@ -126,6 +161,16 @@ export default {
     align-items: center;
     justify-content: center;
     gap: 4rem;
+  }
+  .built-with img {
+    width: 10rem;
+    height: 10rem;
+    flex-shrink: 0;
+    margin: 0 2rem 0 2rem;
+    padding: 0;
+  }
+  .built-with {
+    justify-content: space-between;
   }
 }
 </style>

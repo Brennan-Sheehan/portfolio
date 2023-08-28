@@ -3,17 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 
-  --dark-background: #272833;
+  /* --dark-background: #272833;
   --dark-foreground: #353543;
   --dark-accent: #4A4962;
   --standard-text: #8E8E9C;
   --accent-text:  #FDFFFF;
-  --dark-highlight: #F4BE3A;
+  --dark-highlight: #F4BE3A; */
 
 }
 
+:root{
+  --dark-background: #d8d6cf;
+  --dark-foreground: #eeeeee;
+  --dark-accent: #d8d6cf;
+  --standard-text: #161616;
+  --accent-text:  #808080;
+  --dark-highlight: #F4BE3A;
+  --element-size: 4rem;
+  --color-dark: #363949;
+  --accent-color: #cacaca;
+}
+
+:root.dark-theme{
+  --dark-background: #272833;
+  --dark-foreground: #353543;
+  --dark-accent: #4A4962;
+  --standard-text: #bcbccf;
+  --accent-text:  #FDFFFF;
+  --dark-highlight: #F4BE3A;
+  --accent-color: #3f3f3f;
+}
+
 p {
-  color: #fff;
+  color: var(--standard-text);
   font-family: Inter;
   font-size: 0.875rem;
   font-style: normal;
@@ -30,7 +52,7 @@ h1 {
   line-height: normal;
 }
 h2 {
-  color: #fff;
+  color: var(--accent-text);
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
@@ -38,7 +60,7 @@ h2 {
   line-height: normal;
 }
 h3 {
-  color: #FFF;
+  color: var(--accent-text);
 font-family: Inter;
 font-size: 1rem;
 font-style: normal;

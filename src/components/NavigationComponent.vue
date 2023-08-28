@@ -37,6 +37,10 @@
     <section class="main-menu">
       <ul class="navigation-menu__labels">
         <li>
+          <ThemeButton />
+        </li>
+
+        <li>
           <a @click="resetToggle" href="#Projects">Projects</a>
         </li>
         <li>
@@ -48,8 +52,12 @@
 </template>
 
 <script>
+import ThemeButton from "./ThemeButton.vue";
 export default {
   name: "NavigationComponent",
+  components: {
+    ThemeButton,
+  },
   methods: {
     resetToggle() {
       const menu = document.getElementById("main");
@@ -96,7 +104,7 @@ body {
   max-width: 100%;
   margin: 0;
   padding: 0.5rem;
-  z-index: 1;
+  z-index: 99;
   width: 100%;
   position: fixed;
 }
@@ -106,7 +114,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: transparent;
+  background-color: var(--dark-background);
   padding-block: 15px;
 }
 
@@ -120,12 +128,7 @@ img {
   height: 60px;
   padding-right: 30px;
 }
-.toggled-true {
-  background-color: rgba(0, 0, 0, 0.548);
-}
-.onScroll {
-  background: black;
-}
+
 .navigation-menu a {
   text-decoration: none;
   color: #fdfefe;
@@ -154,10 +157,10 @@ img {
 }
 
 .navigation-menu__labels > li > a:hover {
-  color: #f14f29;
+  color: var(--dark-highlight);
 }
 .navigation-menu__labels > li > button:hover {
-  color: #f14f29;
+  color: var(--dark-highlight);
 }
 
 #toggleMenu,
@@ -176,8 +179,8 @@ img {
     opacity: 1;
   }
   .navigation-container {
-    position: relative;
-    background: #2f313e;
+    position: fixed;
+    background: var(--dark-background);
   }
   .navigation-menu label {
     display: inline-flex;
